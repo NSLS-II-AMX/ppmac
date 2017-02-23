@@ -16,7 +16,7 @@ CFLAGS  := -O0 -g3 -Wall -fmessage-length=0 -mhard-float -funsigned-char -D_REEN
 
 LDFLAGS := -L/opt/ppmac/libppmac -L/usr/local/xenomai/lib
 		   
-LIBS    := -lrt -lpthread -lpthread_rt -ldl -lppmac
+LIBS    := -lrt -lxenomai -lpthread -lpthread_rt -ldl -lppmac
 		   
 WRAP    := -Wl,-rpath,/opt/ppmac/rtppmac    \
            -Wl,-rpath,/opt/ppmac/libppmac   \
